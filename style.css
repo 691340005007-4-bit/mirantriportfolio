@@ -1,0 +1,31 @@
+   /* แบบ tag */
+        body{
+            background-color: rgb(126, 186, 188);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+        }
+        /* แบบ class */
+        .botomUP{
+            background-color: rgb(231, 141, 22);
+            background: linear-gradient(to left,rgb(186, 43, 145),rgb(221, 200, 216));
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+        }
+        .botomUP:hover{
+            background: linear-gradient(to left,rgb(230, 223, 228),rgb(121, 22, 98));
+        }
+        #topDown{
+            background-color: rgb(176, 24, 24);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+        }
+        .botomUP:hover{
+            background: linear-gradient(to left,rgb(230, 223, 228),rgb(174, 26, 65));
+        }
