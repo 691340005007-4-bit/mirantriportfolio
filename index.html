@@ -55,40 +55,41 @@
 </nav>
 
 
-<!-- HOME SECTION -->
-<section id="home" class="hero">
-    <div class="container">
-        <div class="row align-items-center">
 
-            <div class="col-lg-7">
-                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 10% 20%, #456da0 0%, transparent 35%),
+        radial-gradient(circle at 90% 80%, #927bd0 0%, transparent 30%),
+        linear-gradient(135deg, #142D4E, #284F80);
+    color: white;
+    padding: 120px 0 70px;
+    position: relative;
+    overflow: hidden;
+}
 
-                <h1>
-                    Hello, I'm <br>
-                    <span>Mirantri Phansawai</span>
-                </h1>
+.hero h1 span {
+    background: linear-gradient(90deg, #73BDF5, #C8B6FF, #FFD6E7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-                <h3>Business Computer Student</h3>
+.profile-img {
+    width: 330px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 15px 40px rgba(115,189,245,0.35);
+    transition: 0.4s;
+}
 
-                <p class="hero-text">
-                    My nickname is Pam. I am interested in technology,
-                    computer systems, website development and learning
-                    new things.
-                </p>
+.profile-img:hover {
+    transform: translateY(-10px) rotate(2deg);
+}
 
-                <a href="#about" class="btn btn-main">About Me</a>
-                <a href="#contact" class="btn btn-outline-main">Contact Me</a>
-            </div>
-
-            <div class="col-lg-5 text-center">
-                <img src="image/pp.png"
-                     class="profile-img"
-                     alt="Pam Profile">
-            </div>
-
-        </div>
-    </div>
-</section>
 
 
 <!-- ABOUT SECTION -->
