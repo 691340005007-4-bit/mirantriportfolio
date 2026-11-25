@@ -8,279 +8,315 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #26364a;
+    font-family: 'Kanit', sans-serif;
+    color: #34304a;
     background: #ffffff;
+}
+
+section {
+    scroll-margin-top: 75px;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #102b50;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
     padding: 15px 0;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
     font-size: 28px;
-    font-weight: 800;
-    color: white;
+    font-weight: 700;
+    color: #6654e8 !important;
 }
 
 .navbar-brand span {
-    color: #70b7ff;
+    color: #ff65a3;
 }
 
 .nav-link {
-    color: white !important;
-    margin-left: 20px;
-    font-size: 14px;
+    color: #45405c;
+    font-weight: 500;
+    margin-left: 15px;
     transition: 0.3s;
 }
 
 .nav-link:hover {
-    color: #70b7ff !important;
+    color: #ff65a3;
 }
 
-/* HOME */
+/* HERO */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #102b50, #234d7d);
-    color: white;
     padding: 120px 0 70px;
+    background: linear-gradient(
+        135deg,
+        #e5f3ff,
+        #f1eaff,
+        #ffe6f2
+    );
 }
 
-.welcome {
-    color: #8dc9ff;
-    letter-spacing: 4px;
-    font-size: 13px;
+.hello {
+    color: #7659e8;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .hero h1 {
-    font-size: 52px;
-    font-weight: 800;
-    margin: 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 15px 0;
 }
 
 .hero h1 span {
-    color: #82c5ff;
+    color: #f35caa;
 }
 
-.hero h3 {
-    font-size: 22px;
+.hero h4 {
+    color: #7054d9;
     margin-bottom: 20px;
 }
 
 .hero-text {
-    color: #d5e4f5;
+    color: #68647a;
     line-height: 1.9;
-    max-width: 550px;
+    max-width: 500px;
 }
 
-.profile-img {
-    width: 330px;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 25px;
-    border: 5px solid rgba(255,255,255,0.5);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-}
-
-/* BUTTON */
 .btn-main {
-    background: #70b7ff;
-    color: #102b50;
-    padding: 12px 28px;
+    background: linear-gradient(90deg, #7958e8, #f35caa);
+    color: white;
     border-radius: 30px;
-    font-weight: 600;
-    margin-top: 15px;
+    padding: 12px 25px;
+    margin: 15px 10px 0 0;
+    transition: 0.3s;
 }
 
 .btn-main:hover {
-    background: white;
-    color: #102b50;
-}
-
-.btn-outline-main {
-    border: 2px solid white;
     color: white;
-    padding: 10px 25px;
-    border-radius: 30px;
-    margin: 15px 0 0 10px;
+    transform: translateY(-4px);
 }
 
-.btn-outline-main:hover {
-    background: white;
-    color: #102b50;
+.btn-outline {
+    border: 2px solid #7958e8;
+    color: #7958e8;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-top: 15px;
+}
+
+.btn-outline:hover {
+    background: #7958e8;
+    color: white;
+}
+
+/* PROFILE */
+.profile-circle {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8d6cf5, #ff77b7);
+    padding: 12px;
+    margin: auto;
+    box-shadow: 0 15px 40px rgba(130,90,220,0.25);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
 }
 
 /* SECTION */
 .section {
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
-.section-heading {
+.section-title {
     text-align: center;
     margin-bottom: 55px;
 }
 
-.section-heading p {
-    color: #3988d2;
-    letter-spacing: 3px;
-    font-size: 13px;
+.section-title span {
+    color: #f35caa;
+    font-size: 14px;
     font-weight: 600;
+    letter-spacing: 3px;
 }
 
-.section-heading h2 {
-    color: #102b50;
+.section-title h2 {
     font-size: 38px;
-    font-weight: 800;
+    font-weight: 700;
+    color: #6654d9;
+    margin-top: 10px;
 }
 
+/* ABOUT */
 .about-img {
-    width: 80%;
-    max-width: 350px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(16,43,80,0.15);
+    width: 300px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 12px 12px 0 #e9dfff;
 }
 
 #about h3 {
-    color: #102b50;
-    font-weight: 700;
+    color: #7054d9;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 #about p {
+    color: #777286;
     line-height: 1.9;
-    color: #68778a;
 }
 
-.info {
-    background: #f1f6fc;
+.info-box {
+    background: #f7f2ff;
     padding: 20px;
     border-radius: 15px;
     margin-top: 20px;
 }
 
-.info p {
-    margin-bottom: 10px;
+.info-box p {
+    margin-bottom: 8px;
 }
 
 /* SKILLS */
 .skills-section {
-    background: #f3f7fc;
+    background: #faf8ff;
 }
 
 .skill-card {
-    background: white;
+    padding: 35px 20px;
     text-align: center;
-    padding: 40px 25px;
     border-radius: 20px;
     height: 100%;
-    box-shadow: 0 5px 25px rgba(16,43,80,0.06);
     transition: 0.3s;
 }
 
 .skill-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(16,43,80,0.12);
+}
+
+.skill-blue {
+    background: #e4f3ff;
+}
+
+.skill-pink {
+    background: #ffe8f2;
+}
+
+.skill-purple {
+    background: #eee7ff;
 }
 
 .skill-icon {
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .skill-card h4 {
-    color: #102b50;
-    font-weight: 700;
+    color: #6654d9;
+    font-weight: 600;
 }
 
 .skill-card p {
-    color: #758398;
-    line-height: 1.8;
+    color: #777286;
 }
 
-/* PROJECTS */
+/* PORTFOLIO */
 .project-card {
-    border: 1px solid #e4edf7;
-    padding: 35px 25px;
+    background: white;
+    padding: 30px;
     border-radius: 20px;
     height: 100%;
+    box-shadow: 0 5px 25px rgba(100,70,150,0.10);
+    border-bottom: 4px solid #d6c5ff;
     transition: 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(16,43,80,0.1);
+    transform: translateY(-10px);
+    border-bottom-color: #ff65a3;
 }
 
 .project-icon {
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 
 .project-card h4 {
-    color: #102b50;
-    font-weight: 700;
+    color: #6654d9;
+    font-weight: 600;
 }
 
 .project-card p {
-    color: #758398;
+    color: #777286;
     line-height: 1.8;
-    min-height: 80px;
 }
 
-.project-card a {
-    text-decoration: none;
-    color: #3988d2;
+.project-link {
+    color: #f35caa;
     font-weight: 600;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #6654d9;
 }
 
 /* CONTACT */
 .contact-section {
-    background: #f3f7fc;
+    background: linear-gradient(
+        135deg,
+        #eee7ff,
+        #ffe6f2
+    );
 }
 
 .contact-text {
-    color: #68778a;
+    color: #777286;
     margin-bottom: 30px;
 }
 
-.contact-links {
+.social-links {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
 }
 
-.contact-links a {
-    background: #102b50;
-    color: white;
-    padding: 13px 28px;
-    border-radius: 30px;
+.social-btn {
     text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #7958e8, #f35caa);
+    padding: 12px 25px;
+    border-radius: 30px;
     transition: 0.3s;
 }
 
-.contact-links a:hover {
-    background: #3988d2;
-    transform: translateY(-4px);
+.social-btn:hover {
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(130,90,220,0.25);
 }
 
 /* FOOTER */
 footer {
-    background: #102b50;
-    color: white;
     text-align: center;
-    padding: 25px 10px;
+    padding: 25px;
+    background: #6654d9;
+    color: white;
 }
 
 footer p {
-    margin: 5px;
-    font-size: 13px;
+    margin: 0;
 }
 
 /* RESPONSIVE */
@@ -288,33 +324,30 @@ footer p {
 
     .hero {
         text-align: center;
-        padding-top: 130px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .hero-text {
         margin: auto;
     }
 
-    .profile-img {
+    .profile-circle {
         width: 250px;
-        height: 290px;
-        margin-top: 40px;
+        height: 250px;
+        margin-top: 45px;
     }
 
-    .section {
-        padding: 70px 0;
+    .about-img {
+        width: 240px;
+        height: 260px;
+        margin-bottom: 35px;
     }
 
-    .section-heading h2 {
+    .section-title h2 {
         font-size: 30px;
     }
 
-    .nav-link {
-        margin-left: 0;
-        padding: 10px 0;
-    }
 }
